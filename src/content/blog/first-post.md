@@ -3,4 +3,4 @@ title: "First!"
 posted: 2014-01-28
 ---
 
-This is my first post!
+# I was fetched via $http in angular <3

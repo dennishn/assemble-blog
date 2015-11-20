@@ -13,40 +13,68 @@ module.exports = function(grunt) {
 			tmp: '.tmp'
 		},
 
+		/*
+			Watch + Livereload + "dev" Server
+		*/
 		watch: {
 			assemble: {
-				files: ['.src/{content,data,site}/**/*.{md,hbs,yml}'],
+				files: [
+					'src/site/templates/**/*.hbs',
+					'src/content/blog/**/*.md',
+					'src/content/pages/**/*.hbs',
+					'src/data/**/*'
+				],
 				tasks: ['assemble']
 			},
-			//sass : {
-			//	files: ['<%= config.src %>/site/assets/scss/{,*/}*.{scss,css}'],
-			//	tasks: ['sass:server']
-			//},
-			//css : {
-			//	files: ['<%= config.tmp %>/assets/css/{,*/}*.css']
-			//},
-			//img : {
-			//	files: ['<%= config.src %>/site/assets/images/*.{jpg,jpeg,png,gif}'],
-			//	tasks: ['imagemin:server']
-			//},
-			//js : {
-			//	files: ['<%= config.src %>/site/assets/js/*.js'],
-			//	tasks: ['copy:serverjs']
-			//}
+			sass: {
+				files: [
+					'src/**/*.scss'
+				],
+				tasks: ['sass', 'autoprefixer']
+			}
 		},
 
 		browserSync: {
 			dev: {
+				bsFiles: {
+					src: [
+						'src/*.html',
+						'src/app/**/*.html',
+						'./dist/{,*/}*.html'
+					]
+				},
+				options: {
+					watchTask: true,
+					server: {
+						baseDir: ['src'],
+						routes: {
+							'/bower_components': './bower_components',
+							'/content': './dist/content'
+						}
+					}
+				}
+			},
+			dist: {
+				bsFiles: {
+					src : [
+						'./dist/assets/css/{,*/}*.css',
+						'./dist/assets/{,*/}*',
+						'./dist/{,*/}*.html'
+					]
+				},
 				options: {
 					watchTask: true,
 					server: {
 						port: 3000,
-						baseDir: ['./dist']
+						baseDir: ['./src']
 					}
 				}
 			}
 		},
 
+		/*
+			Sass + CSS
+		*/
 		sass: {
 			options: {
 				loadPath: [
@@ -76,41 +104,72 @@ module.exports = function(grunt) {
 			}
 		},
 
-		assemble: {
+		autoprefixer: {
 			options: {
-				layout: 'default.hbs',
-				layoutdir: './src/site/templates/layouts/',
-				partials: './src/site/templates/partials/**/*.hbs'
+				browsers: ['last 2 version']
 			},
-			posts: {
+			server:{
+
+			},
+			dist: {
 				files: [{
-					cwd: './src/content/',
-					dest: './dist/',
 					expand: true,
-					src: ['**/*.hbs', '!_pages/**/*.hbs']
-				}, {
-					cwd: './src/content/_pages/',
-					dest: './dist/',
-					expand: true,
-					src: '**/*.hbs'
+					cwd: '<%= config.tmp %>/styles/',
+					src: '{,*/}*.css',
+					dest: '<%= config.dist %>/styles/'
 				}]
 			}
 		},
 
-		useminPrepare: {
+		/*
+			Assemble
+		*/
+		assemble: {
 			options: {
-				dest: '<%= config.dist %>'
+				plugins: ['grunt-assemble-blog-config.js'],
+				helpers: 'src/site/helpers/**/*.js',
+				layout: 'ajax.hbs',
+				layoutdir: './src/site/templates/layouts/',
+				partials: './src/site/templates/partials/**/*',
+				blogConfig: {
+					dest: './dist/content/'
+				}
 			},
-			html: '<%= config.tmp %>/index.html',
-			css: '<%= config.tmp %>/assets/css/app.css'
+			posts: {
+				files: [{
+					cwd: 'src/content',
+					dest: 'dist/content',
+					expand: true,
+					flatten: false,
+					src: ['blog/**/*.md']
+				}]
+			},
+			pages: {
+				files: [{
+					cwd: 'src/content',
+					dest: 'dist/content',
+					expand: true,
+					flatten: false,
+					src: ['pages/**/*.hbs']
+				}]
+			}
 		},
 
-		usemin: {
+		/*
+			Bower Wiring
+		*/
+		wiredep: {
 			options: {
-				assetsDirs: ['<%= config.tmp %>','bower_components']
+				cwd: '',
+				exclude: []
 			},
-			html: ['<%= config.tmp %>/{,*/}*.html'],
-			css: ['<%= config.tmp %>/assets/css/*.css']
+
+			app: {
+				src: [
+					'src/index.html'
+				],
+				ignorePath: /\.\.\//
+			}
 		},
 
 		imagemin: {
@@ -139,44 +198,6 @@ module.exports = function(grunt) {
 					cwd: '<%= config.src %>/site/assets/images',
 					src: '{,*/}*.svg',
 					dest: '<%= config.dist %>/assets/images'
-				}]
-			}
-		},
-
-		htmlmin: {
-			dist: {
-				options: {
-					collapseBooleanAttributes: false,
-					collapseWhitespace: false,
-					removeAttributeQuotes: false,
-					removeCommentsFromCDATA: false,
-					removeEmptyAttributes: false,
-					removeOptionalTags: false,
-					removeRedundantAttributes: false,
-					useShortDoctype: false
-				},
-				files: [{
-					expand: true,
-					cwd: '<%= config.tmp %>',
-					src: '{,*/}*.html',
-					dest: '<%= config.dist %>'
-				}]
-			}
-		},
-
-		autoprefixer: {
-			options: {
-				browsers: ['last 2 version']
-			},
-            server:{
-
-            },
-			dist: {
-				files: [{
-					expand: true,
-					cwd: '<%= config.tmp %>/styles/',
-					src: '{,*/}*.css',
-					dest: '<%= config.dist %>/styles/'
 				}]
 			}
 		},
@@ -256,11 +277,12 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('assemble');
 
-	grunt.registerTask('server', [
-		//'clean',
+	grunt.registerTask('serve', [
+		'clean',
 		'assemble',
+		'wiredep',
 		//'sass-convert',
-		'browserSync',
+		'browserSync:dev',
 		'watch'
 	]);
 
