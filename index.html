@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>assemble-blog</title>
+
+        <base href="/">
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="assets/css/main.min.9095c1b6.css">
+
+    </head>
+    <body ng-app="assemble-blog">
+
+        <h1>Assemble-Blog</h1>
+
+        <p>Build with:</p>
+        <ul>
+            <li>Grunt</li>
+            <li>Assemble</li>
+            <li>Angular.js</li>
+            <li>Foundation for Sites v6</li>
+        </ul>
+
+        <p>Here's some content loaded async:</p>
+
+        <div ng-controller="demoCtrl as demo">
+            <div ng-bind-html="demo.content"></div>
+
+            <div demo-directive></div>
+        </div>
+
+        <!-- Application Entry: -->
+        <div ui-view="application"></div>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-XXXXX-X');
+            // We use an angular module to track "page" views.
+            //ga('send', 'pageview');
+        </script>
+
+        <script src="assets/js/vendor.56e0f0b5.js"></script>
+
+        <script src="assets/js/site.e08b7495.js"></script>
+
+    </body>
+</html>

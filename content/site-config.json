@@ -1,0 +1,21 @@
+{
+    "blog": [
+        {
+            "title": "First!",
+            "posted": "2014-01-28T00:00:00.000Z",
+            "path": "content/blog/first-post.html"
+        },
+        {
+            "title": "Second!",
+            "posted": "2015-11-19T00:00:00.000Z",
+            "path": "content/blog/second-post.html"
+        }
+    ],
+    "pages": [
+        {
+            "title": "Welcome",
+            "posted": "2014-01-28T00:00:00.000Z",
+            "path": "content/pages/index.html"
+        }
+    ]
+}
