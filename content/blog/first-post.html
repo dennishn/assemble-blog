@@ -1,1 +1,815 @@
-<h1 id="i-was-fetched-via-http-in-angular-3-med-jazz">I was fetched via $http in angular &lt;3 med jazz</h1>
+<h3 id="this-readme-can-be-used-as-a-reference-for-github-flavored-markdown-styling-and-possibly-behavior-">This README can be used as a reference for github-flavored-markdown styling (and possibly behavior).</h3>
+<h1 id="table-of-contents">Table of Contents</h1>
+<ul>
+<li><a href="#h1">Chapter 1</a></li>
+<li><a href="#h2">Chapter 2</a></li>
+<li><a href="#h3">Chapter 3</a></li>
+</ul>
+<hr>
+<h1 id="h1">H1</h1>
+<p>followed by some text</p>
+<h2 id="h2">H2</h2>
+<p>followed by some text</p>
+<h3 id="h3">H3</h3>
+<p>followed by some text</p>
+<h4 id="h4">H4</h4>
+<p>followed by some text</p>
+<h5 id="h5">H5</h5>
+<p>followed by some text</p>
+<h6 id="h6">H6</h6>
+<p>followed by some text</p>
+<p>Auto-detected link: <a href="http://www.france.com">http://www.france.com</a></p>
+<p>Some Ignored_multiple_underscore_italics here</p>
+<p>A line of normal text with <code>inline code</code> and <em>italics</em>, <strong>strong font</strong>, and even some μ†ℱ ╋ℯ╳╋. Followed by lots of Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id sem purus, eu commodo tortor. Donec malesuada ultricies dolor a eleifend. In hac habitasse platea dictumst. Vivamus a faucibus ligula. Nullam molestie tristique arcu, eu elementum metus ultricies sed. Aenean luctus congue lectus, vitae semper erat rhoncus non. Nulla facilisi.</p>
+<p>Followed by another line of normal text with <code>inline code</code> and <em>italics</em>, <strong>strong font</strong>, and even some μ†ℱ ╋ℯ╳╋. Followed by lots of Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id sem purus, eu commodo tortor. Donec malesuada ultricies dolor a eleifend. In hac habitasse platea dictumst. Vivamus a faucibus ligula. Nullam molestie tristique arcu, eu elementum metus ultricies sed. Aenean luctus congue lectus, vitae semper erat rhoncus non. Nulla facilisi.</p>
+<p>Thick horizontal rule:</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Table Header 1</th>
+<th>Table Header 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content</td>
+<td><a href="http://example.org">http://example.org</a></td>
+</tr>
+<tr>
+<td>Content</td>
+<td><a href="http://localhost:\">http://localhost:\</a><port\></td>
+</tr>
+</tbody>
+</table>
+<p>Text right below table. Follows is a table with an empty cell, and unaligned indenting.</p>
+<table>
+<thead>
+<tr>
+<th>Table Header 1</th>
+<th>Table Header 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content</td>
+<td>Cntent</td>
+</tr>
+<tr>
+<td>Content</td>
+</tr>
+</tbody>
+</table>
+<p>Empty line between table and this text</p>
+<pre><code><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">this_is</span></span>
+  puts <span class="hljs-string">"some <span class="hljs-subst">#{<span class="hljs-number">4</span>-space-indent}</span> code"</span>
+<span class="hljs-keyword">end</span></code></pre>
+<h1 id="syntax-highlighting-tests-">Syntax highlighting tests:</h1>
+<h2 id="css">CSS</h2>
+<pre><code class="language-css"><span class="hljs-at_rule">@<span class="hljs-keyword">media</span> screen and (-webkit-min-device-pixel-ratio: <span class="hljs-number">0</span>) </span>{
+  <span class="hljs-tag">body</span><span class="hljs-pseudo">:first-of-type</span> <span class="hljs-tag">pre</span><span class="hljs-pseudo">::after</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">'highlight: '</span> <span class="hljs-function">attr</span>(class)</span></span>;
+  }</span>
+  <span class="hljs-tag">body</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-function">linear-gradient</span>(<span class="hljs-number">45deg</span>, blue, red)</span></span>;
+  }</span>
+}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-function">url</span>(<span class="hljs-string">'print.css'</span>)</span>;
+<span class="hljs-at_rule">@<span class="hljs-keyword">page</span></span><span class="hljs-pseudo">:right</span> <span class="hljs-rules">{
+ <span class="hljs-rule"><span class="hljs-attribute">margin</span>:<span class="hljs-value"> <span class="hljs-number">1cm</span> <span class="hljs-number">2cm</span> <span class="hljs-number">1.3cm</span> <span class="hljs-number">4cm</span></span></span>;
+}</span>
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">font-face</span></span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> Chunkfive</span></span>; <span class="hljs-rule"><span class="hljs-attribute">src</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'Chunkfive.otf'</span>)</span></span>;
+}</span>
+
+<span class="hljs-tag">div</span><span class="hljs-class">.text</span>,
+<span class="hljs-id">#content</span>,
+<span class="hljs-tag">li</span><span class="hljs-attr_selector">[lang=ru]</span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font</span>:<span class="hljs-value"> Tahoma, Chunkfive, sans-serif</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">background</span>:<span class="hljs-value"> <span class="hljs-function">url</span>(<span class="hljs-string">'hatch.png'</span>) <span class="hljs-comment">/* wtf? */</span></span></span>;  <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> <span class="hljs-hexcolor">#F0F0F0</span> <span class="hljs-important">!important</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">width</span>:<span class="hljs-value"> <span class="hljs-number">100%</span></span></span>;
+}</span></code></pre>
+<h2 id="java">Java</h2>
+<pre><code class="language-java"><span class="hljs-comment">/**
+ * <span class="hljs-doctag">@author</span> John Smith &lt;john.smith<span class="hljs-doctag">@example</span>.com&gt;
+ * <span class="hljs-doctag">@version</span> 1.0
+*/</span>
+<span class="hljs-keyword">package</span> l2f.gameserver.model;
+
+<span class="hljs-keyword">import</span> java.util.ArrayList;
+
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">L2Character</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">L2Object</span> </span>{
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> Short ABNORMAL_EFFECT_BLEEDING = <span class="hljs-number">0x0_0_0_1</span>; <span class="hljs-comment">// not sure</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">moveTo</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, <span class="hljs-keyword">int</span> z)</span> </span>{
+    _ai = <span class="hljs-keyword">null</span>;
+    _log.warning(<span class="hljs-string">"Should not be called"</span>);
+    <span class="hljs-keyword">if</span> (<span class="hljs-number">1</span> &gt; <span class="hljs-number">5</span>) {
+      <span class="hljs-keyword">return</span>;
+    }
+  }
+
+  <span class="hljs-comment">/** Task of AI notification */</span>
+  <span class="hljs-annotation">@SuppressWarnings</span>( { <span class="hljs-string">"nls"</span>, <span class="hljs-string">"unqualified-field-access"</span>, <span class="hljs-string">"boxing"</span> })
+  <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NotifyAITask</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Runnable</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> CtrlEvent _evt;
+
+    List&lt;String&gt; mList = <span class="hljs-keyword">new</span> ArrayList&lt;String&gt;()
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+      <span class="hljs-keyword">try</span> {
+        getAI().notifyEvent(_evt, _evt.class, <span class="hljs-keyword">null</span>);
+      } <span class="hljs-keyword">catch</span> (Throwable t) {
+        t.printStackTrace();
+      }
+    }
+  }
+}</code></pre>
+<h2 id="json">JSON</h2>
+<pre><code class="language-json">[
+  {
+    "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"apples"</span></span>,
+    "<span class="hljs-attribute">count</span>": <span class="hljs-value">[<span class="hljs-number">12000</span>, <span class="hljs-number">20000</span>]</span>,
+    "<span class="hljs-attribute">description</span>": <span class="hljs-value">{"<span class="hljs-attribute">text</span>": <span class="hljs-value"><span class="hljs-string">"..."</span></span>, "<span class="hljs-attribute">sensitive</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>}
+  </span>},
+  {
+    "<span class="hljs-attribute">title</span>": <span class="hljs-value"><span class="hljs-string">"oranges"</span></span>,
+    "<span class="hljs-attribute">count</span>": <span class="hljs-value">[<span class="hljs-number">17500</span>, <span class="hljs-literal">null</span>]</span>,
+    "<span class="hljs-attribute">description</span>": <span class="hljs-value">{"<span class="hljs-attribute">text</span>": <span class="hljs-value"><span class="hljs-string">"..."</span></span>, "<span class="hljs-attribute">sensitive</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>}
+  </span>}
+]</code></pre>
+<h2 id="markdown">Markdown</h2>
+<pre><code class="language-markdown"><span class="hljs-header"># hello world</span>
+
+you can write text [<span class="hljs-link_label">with links</span>](<span class="hljs-link_url">http://example.com</span>) inline or [<span class="hljs-link_label">link references</span>][<span class="hljs-link_reference">1</span>].
+
+<span class="hljs-bullet">* </span>one <span class="hljs-emphasis">_thing_</span> has <span class="hljs-emphasis">*em*</span>phasis
+<span class="hljs-bullet">* </span>two <span class="hljs-strong">__things__</span> are <span class="hljs-strong">**bold**</span>
+
+[<span class="hljs-link_reference">1</span>]:<span class="hljs-link_url"> http://example.com</span>
+
+<span class="hljs-horizontal_rule">---</span>
+
+<span class="hljs-header">hello world
+===========</span>
+
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">this_is</span> <span class="hljs-attribute">inline</span>=<span class="hljs-value">"xml"</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">this_is</span>&gt;</span></span>
+
+<span class="hljs-blockquote">&gt; markdown is so cool</span>
+
+<span class="hljs-code">    so are code segments</span>
+
+<span class="hljs-bullet">1. </span>one thing (yeah!)
+<span class="hljs-bullet">2. </span>two thing <span class="hljs-code">`i can write code`</span>, and <span class="hljs-code">`more`</span> wipee!</code></pre>
+<h2 id="objective-c">Objective C</h2>
+<pre><code class="language-objective-c"><span class="hljs-preprocessor">#import <span class="hljs-title">&lt;UIKit/UIKit.h&gt;</span></span>
+<span class="hljs-preprocessor">#import <span class="hljs-title">"Dependency.h"</span></span>
+
+<span class="hljs-class"><span class="hljs-keyword">@protocol</span> <span class="hljs-title">WorldDataSource</span></span>
+<span class="hljs-keyword">@optional</span>
+- (<span class="hljs-built_in">NSString</span>*)worldName;
+<span class="hljs-keyword">@required</span>
+- (<span class="hljs-built_in">BOOL</span>)allowsToLive;
+<span class="hljs-keyword">@end</span>
+
+<span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">Test</span> : <span class="hljs-title">NSObject</span> &lt;<span class="hljs-title">HelloDelegate</span>, <span class="hljs-title">WorldDataSource</span>&gt; </span>{
+  <span class="hljs-built_in">NSString</span> *_greeting;
+}
+
+<span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">readonly</span>) <span class="hljs-built_in">NSString</span> *greeting;
+- (<span class="hljs-keyword">IBAction</span>) show;
+<span class="hljs-keyword">@end</span>
+
+<span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">Test</span></span>
+
+<span class="hljs-keyword">@synthesize</span> test=_test;
+
++ (<span class="hljs-keyword">id</span>) test {
+  <span class="hljs-keyword">return</span> [<span class="hljs-keyword">self</span> testWithGreeting:<span class="hljs-string">@"Hello, world!\nFoo bar!"</span>];
+}
+
++ (<span class="hljs-keyword">id</span>) testWithGreeting:(<span class="hljs-built_in">NSString</span>*)greeting {
+  <span class="hljs-keyword">return</span> [[[<span class="hljs-keyword">self</span> alloc] initWithGreeting:greeting] autorelease];
+}
+
+- (<span class="hljs-keyword">id</span>) initWithGreeting:(<span class="hljs-built_in">NSString</span>*)greeting {
+  <span class="hljs-keyword">if</span> ( (<span class="hljs-keyword">self</span> = [<span class="hljs-keyword">super</span> init]) ) {
+    _greeting = [greeting retain];
+  }
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>;
+}
+
+- (<span class="hljs-keyword">void</span>) dealloc {
+  [_greeting release];
+  [<span class="hljs-keyword">super</span> dealloc];
+}
+
+<span class="hljs-keyword">@end</span></code></pre>
+<h2 id="php">PHP</h2>
+<pre><code class="language-php"><span class="hljs-keyword">require_once</span> <span class="hljs-string">'Zend/Uri/Http.php'</span>;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">Location</span>\<span class="hljs-title">Web</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Factory</span>
+</span>{
+    <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">_factory</span><span class="hljs-params">()</span></span>;
+}
+
+<span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">URI</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseURI</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Factory</span>
+</span>{
+    <span class="hljs-keyword">abstract</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span><span class="hljs-params">()</span></span>;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-variable">$st1</span> = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">const</span> ME = <span class="hljs-string">"Yo"</span>;
+    <span class="hljs-keyword">var</span> <span class="hljs-variable">$list</span> = <span class="hljs-keyword">NULL</span>;
+    <span class="hljs-keyword">private</span> <span class="hljs-variable">$var</span>;
+
+    <span class="hljs-comment">/**
+     * Returns a URI
+     *
+     * <span class="hljs-doctag">@return</span> URI
+     */</span>
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">_factory</span><span class="hljs-params">(<span class="hljs-variable">$stats</span> = array<span class="hljs-params">()</span>, <span class="hljs-variable">$uri</span> = <span class="hljs-string">'http'</span>)</span>
+    </span>{
+        <span class="hljs-keyword">echo</span> <span class="hljs-keyword">__METHOD__</span>;
+        <span class="hljs-variable">$uri</span> = explode(<span class="hljs-string">':'</span>, <span class="hljs-variable">$uri</span>, <span class="hljs-number">0b10</span>);
+        <span class="hljs-variable">$schemeSpecific</span> = <span class="hljs-keyword">isset</span>(<span class="hljs-variable">$uri</span>[<span class="hljs-number">1</span>]) ? <span class="hljs-variable">$uri</span>[<span class="hljs-number">1</span>] : <span class="hljs-string">''</span>;
+        <span class="hljs-variable">$desc</span> = <span class="hljs-string">'Multi
+line description'</span>;
+
+        <span class="hljs-comment">// Security check</span>
+        <span class="hljs-keyword">if</span> (!ctype_alnum(<span class="hljs-variable">$scheme</span>)) {
+            <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> Zend_Uri_Exception(<span class="hljs-string">'Illegal scheme'</span>);
+        }
+
+        <span class="hljs-variable">$this</span>-&gt;var = <span class="hljs-number">0</span> - <span class="hljs-keyword">self</span>::<span class="hljs-variable">$st</span>;
+        <span class="hljs-variable">$this</span>-&gt;list = <span class="hljs-keyword">list</span>(<span class="hljs-keyword">Array</span>(<span class="hljs-string">"1"</span>=&gt; <span class="hljs-number">2</span>, <span class="hljs-number">2</span>=&gt;<span class="hljs-keyword">self</span>::ME, <span class="hljs-number">3</span> =&gt; \Location\Web\URI::class));
+
+        <span class="hljs-keyword">return</span> [
+            <span class="hljs-string">'uri'</span>   =&gt; <span class="hljs-variable">$uri</span>,
+            <span class="hljs-string">'value'</span> =&gt; <span class="hljs-keyword">null</span>,
+        ];
+    }
+}
+
+<span class="hljs-keyword">echo</span> URI::ME . URI::<span class="hljs-variable">$st1</span>;
+
+<span class="hljs-comment"><span class="hljs-keyword">__halt_compiler</span> () ; datahere
+datahere
+datahere */
+datahere</span></code></pre>
+<h2 id="swift">Swift</h2>
+<pre><code class="language-swift"><span class="hljs-class"><span class="hljs-keyword">extension</span> <span class="hljs-title">MyClass</span> : <span class="hljs-title">Interface</span> </span>{
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">func</span> <span class="hljs-title">unarchiveFromFile</span>&lt;<span class="hljs-title">A</span>&gt;(<span class="hljs-title">file</span> : <span class="hljs-title">A</span>, (<span class="hljs-title">Int</span>,<span class="hljs-title">Int</span>) -&gt; <span class="hljs-title">B</span>) -&gt; <span class="hljs-title">SKNode</span>? </span>{
+        <span class="hljs-keyword">let</span> path: <span class="hljs-type">String</span> = bundle.pathForResource(file, ofType: <span class="hljs-string">"file<span class="hljs-subst">\(name + <span class="hljs-number">5</span>)</span>.txt"</span>)
+        <span class="hljs-keyword">let</span> funnyNumber = <span class="hljs-number">3</span> + <span class="hljs-number">0xC2.15p2</span> * (<span class="hljs-number">1_000_000.000_000_1</span> - <span class="hljs-number">000123.456</span>) + <span class="hljs-number">0o21</span>
+        <span class="hljs-keyword">var</span> sceneData = <span class="hljs-type">NSData</span>.dataWithContentsOfFile(path, options: .<span class="hljs-type">DataReadingMappedIfSafe</span>, error: <span class="hljs-literal">nil</span>)
+        <span class="hljs-comment">/* a comment <span class="hljs-comment">/* with a nested comment */</span> and the end */</span>
+    }
+    <span class="hljs-preprocessor">@objc</span> <span class="hljs-keyword">override</span> <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">shouldAutorotate</span><span class="hljs-params">()</span></span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
+    }
+}</code></pre>
+<h2 id="scss">SCSS</h2>
+<pre><code class="language-scss"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"compass/reset"</span>;</span>
+
+<span class="hljs-comment">// variables</span>
+<span class="hljs-variable">$colorGreen</span><span class="hljs-value">: <span class="hljs-hexcolor">#008000</span>;</span>
+<span class="hljs-variable">$colorGreenDark</span><span class="hljs-value">: <span class="hljs-function">darken</span>(<span class="hljs-variable">$colorGreen</span>, <span class="hljs-number">10</span>);</span>
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">mixin</span><span class="hljs-preprocessor"> container</span> {</span>
+    <span class="hljs-attribute">max-width</span><span class="hljs-value">: <span class="hljs-number">980px</span>;</span>
+}
+
+<span class="hljs-comment">// mixins with parameters</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">mixin</span><span class="hljs-preprocessor"> button</span>(<span class="hljs-variable">$color</span>:green) {</span>
+    <span class="hljs-at_rule">@<span class="hljs-keyword">if</span> (<span class="hljs-variable">$color</span> ==<span class="hljs-preprocessor"> green</span>) {</span>
+        <span class="hljs-attribute">background-color</span><span class="hljs-value">: <span class="hljs-hexcolor">#008000</span>;</span>
+    }
+    <span class="hljs-at_rule">@<span class="hljs-keyword">else</span><span class="hljs-preprocessor"> if</span> (<span class="hljs-variable">$color</span> ==<span class="hljs-preprocessor"> red</span>) {</span>
+        <span class="hljs-attribute">background-color</span><span class="hljs-value">: <span class="hljs-hexcolor">#B22222</span>;</span>
+    }
+}
+
+<span class="hljs-tag">button</span> {
+    <span class="hljs-at_rule">@<span class="hljs-keyword">include</span><span class="hljs-preprocessor"> button</span>(red);</span>
+}
+
+<span class="hljs-tag">div</span>,
+<span class="hljs-class">.navbar</span>,
+<span class="hljs-id">#header</span>,
+<span class="hljs-tag">input</span><span class="hljs-attr_selector">[type="input"]</span> {
+    <span class="hljs-attribute">font-family</span><span class="hljs-value">: <span class="hljs-string">"Helvetica Neue"</span>, Arial, sans-serif;</span>
+    <span class="hljs-attribute">width</span><span class="hljs-value">: auto;</span>
+    <span class="hljs-attribute">margin</span><span class="hljs-value">: <span class="hljs-number">0</span> auto;</span>
+    <span class="hljs-attribute">display</span><span class="hljs-value">: block;</span>
+}
+
+<span class="hljs-class">.row-12</span> &gt; <span class="hljs-attr_selector">[class*="spans"]</span> {
+    <span class="hljs-attribute">border-left</span><span class="hljs-value">: <span class="hljs-number">1px</span> solid <span class="hljs-hexcolor">#B5C583</span>;</span>
+}
+
+<span class="hljs-comment">// nested definitions</span>
+<span class="hljs-tag">ul</span> {
+    <span class="hljs-attribute">width</span><span class="hljs-value">: <span class="hljs-number">100%</span>;</span>
+    <span class="hljs-attribute">padding</span><span class="hljs-value">: {
+        left: <span class="hljs-number">5px</span>;</span> <span class="hljs-attribute">right</span><span class="hljs-value">: <span class="hljs-number">5px</span>;</span>
+    }
+  <span class="hljs-tag">li</span> {
+      <span class="hljs-attribute">float</span><span class="hljs-value">: left;</span> <span class="hljs-attribute">margin-right</span><span class="hljs-value">: <span class="hljs-number">10px</span>;</span>
+      <span class="hljs-class">.home</span> {
+          <span class="hljs-attribute">background</span><span class="hljs-value">: <span class="hljs-function">url</span>(<span class="hljs-string">'http://placehold.it/20'</span>) scroll no-repeat <span class="hljs-number">0</span> <span class="hljs-number">0</span>;</span>
+    }
+  }
+}
+
+<span class="hljs-class">.banner</span> {
+    <span class="hljs-at_rule">@<span class="hljs-keyword">extend</span><span class="hljs-preprocessor"> .container</span>;</span>
+}
+
+<span class="hljs-tag">a</span> {
+  <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-variable">$colorGreen</span>;</span>
+  &amp;<span class="hljs-pseudo">:hover</span> { <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-variable">$colorGreenDark</span>;</span> }
+  &amp;<span class="hljs-pseudo">:visited</span> { <span class="hljs-attribute">color</span><span class="hljs-value">: <span class="hljs-hexcolor">#c458cb</span>;</span> }
+}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">for</span> <span class="hljs-variable">$i</span><span class="hljs-preprocessor"> from</span><span class="hljs-preprocessor"> 1</span><span class="hljs-preprocessor"> through</span><span class="hljs-preprocessor"> 5</span> {</span>
+    <span class="hljs-class">.span</span>#{<span class="hljs-variable">$i</span>} {
+        <span class="hljs-attribute">width</span><span class="hljs-value">: <span class="hljs-number">20px</span>*<span class="hljs-variable">$i</span>;</span>
+    }
+}
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">mixin</span><span class="hljs-preprocessor"> mobile</span> {</span>
+  <span class="hljs-at_rule">@<span class="hljs-keyword">media</span><span class="hljs-preprocessor"> screen</span><span class="hljs-preprocessor"> and</span> (max-width :<span class="hljs-preprocessor"> 600px</span>) {</span>
+    <span class="hljs-at_rule">@<span class="hljs-keyword">content</span>;</span>
+  }
+}</code></pre>
+<h2 id="typescript">Typescript</h2>
+<pre><code class="language-typescript"><span class="hljs-keyword">class</span> MyClass {
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> myValue: <span class="hljs-built_in">string</span>;
+    <span class="hljs-constructor"><span class="hljs-keyword">constructor</span>(init: string) </span>{
+      <span class="hljs-keyword">this</span>.myValue = init;
+    }
+  }
+  <span class="hljs-keyword">import</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">"fs"</span>);
+  <span class="hljs-module"><span class="hljs-keyword">module</span> MyModule </span>{
+    <span class="hljs-keyword">export</span> <span class="hljs-interface"><span class="hljs-keyword">interface</span> MyInterface <span class="hljs-keyword">extends</span> OtherInterface </span>{
+      myProperty: <span class="hljs-built_in">any</span>;
+    }
+  }
+  <span class="hljs-keyword">declare</span> magicNumber <span class="hljs-built_in">number</span>;
+  myArray.forEach(() =&gt; {
+    <span class="hljs-comment">// fat arrow syntax</span>
+  });</code></pre>
+<h2 id="javascript">Javascript</h2>
+<pre><code class="language-js"><span class="hljs-keyword">var</span> test = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">this_is</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"language declared as 'js' instead"</span>);
+}</code></pre>
+<h2 id="bogus-language">Bogus Language</h2>
+<pre><code class="language-bogus_language"><span class="hljs-keyword">var</span> test = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">this_is</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"language declared as bogus_language"</span>);
+}</code></pre>
+<blockquote>
+<p>here is blockquote</p>
+</blockquote>
+<h1 id="typography">Typography</h1>
+<h2 id="headings">Headings</h2>
+<p>Headings from <code>h1</code> through <code>h6</code> are constructed with a <code>#</code> for each level:</p>
+<pre><code class="language-markdown"><span class="hljs-preprocessor"># h1 Heading</span>
+<span class="hljs-preprocessor">## h2 Heading</span>
+<span class="hljs-preprocessor">### h3 Heading</span>
+<span class="hljs-preprocessor">#### h4 Heading</span>
+<span class="hljs-preprocessor">##### h5 Heading</span>
+<span class="hljs-preprocessor">###### h6 Heading</span></code></pre>
+<p>Renders to:</p>
+<h1 id="h1-heading">h1 Heading</h1>
+<h2 id="h2-heading">h2 Heading</h2>
+<h3 id="h3-heading">h3 Heading</h3>
+<h4 id="h4-heading">h4 Heading</h4>
+<h5 id="h5-heading">h5 Heading</h5>
+<h6 id="h6-heading">h6 Heading</h6>
+<p>HTML:</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>h1 Heading<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>h2 Heading<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h3</span>&gt;</span>h3 Heading<span class="hljs-tag">&lt;/<span class="hljs-title">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h4</span>&gt;</span>h4 Heading<span class="hljs-tag">&lt;/<span class="hljs-title">h4</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h5</span>&gt;</span>h5 Heading<span class="hljs-tag">&lt;/<span class="hljs-title">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">h6</span>&gt;</span>h6 Heading<span class="hljs-tag">&lt;/<span class="hljs-title">h6</span>&gt;</span></code></pre>
+<p><br>
+<br>
+<br></p>
+<h2 id="horizontal-rules">Horizontal Rules</h2>
+<p>The HTML <code>&lt;hr&gt;</code> element is for creating a &quot;thematic break&quot; between paragraph-level elements. In markdown, you can create a <code>&lt;hr&gt;</code> with any of the following:</p>
+<ul>
+<li><code>___</code>: three consecutive underscores</li>
+<li><code>---</code>: three consecutive dashes</li>
+<li><code>***</code>: three consecutive asterisks</li>
+</ul>
+<p>renders to:</p>
+<hr>
+<hr>
+<hr>
+<p><br>
+<br>
+<br></p>
+<h2 id="body-copy">Body Copy</h2>
+<p>Body copy written as normal, plain text will be wrapped with <code>&lt;p&gt;&lt;/p&gt;</code> tags in the rendered HTML.</p>
+<p>So this body copy:</p>
+<pre><code class="language-markdown">Lo<span class="hljs-comment">rem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.</span></code></pre>
+<p>renders to this HTML (Please excuse the poorly syntax highlighted example...):</p>
+<pre><code class="language-html">&lt;p&gt;Lo<span class="hljs-comment">rem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.&lt;/p&gt;</span></code></pre>
+<p><br>
+<br>
+<br></p>
+<h2 id="emphasis">Emphasis</h2>
+<h3 id="bold">Bold</h3>
+<p>For emphasizing a snippet of text with a heavier font-weight.</p>
+<p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+<pre><code class="language-markdown"><span class="hljs-keyword">*</span><span class="hljs-keyword">*</span>rendered as bold text<span class="hljs-keyword">*</span><span class="hljs-keyword">*</span></code></pre>
+<p>renders to:</p>
+<p><strong>rendered as bold text</strong></p>
+<p>and this HTML</p>
+<pre><code class="language-html">&lt;strong&gt;rendered <span class="hljs-keyword">as</span> bold <span class="hljs-type">text</span>&lt;/strong&gt;</code></pre>
+<h3 id="italics">Italics</h3>
+<p>For emphasizing a snippet of text with italics.</p>
+<p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+<pre><code class="language-markdown">_rendered <span class="hljs-keyword">as</span> italicized text_</code></pre>
+<p>renders to:</p>
+<p><em>rendered as italicized text</em></p>
+<p>and this HTML:</p>
+<pre><code class="language-html">&lt;<span class="hljs-keyword">em</span>&gt;rendered <span class="hljs-keyword">as</span> italicized text&lt;/<span class="hljs-keyword">em</span>&gt;</code></pre>
+<h3 id="strikethrough">strikethrough</h3>
+<p>In GFM you can do strickthroughs. </p>
+<pre><code class="language-markdown">~~Strike <span class="hljs-keyword">through</span> this <span class="hljs-type">text</span>.~~</code></pre>
+<p>Which renders to:</p>
+<p><del>Strike through this text.</del></p>
+<p><br>
+<br>
+<br></p>
+<h2 id="blockquotes">Blockquotes</h2>
+<p>For quoting blocks of content from another source within your document.</p>
+<p>Add <code>&gt;</code> before any text you want to quote. </p>
+<pre><code class="language-markdown">Add `&gt;` <span class="hljs-keyword">before</span> <span class="hljs-keyword">any</span> <span class="hljs-keyword">text</span> you want <span class="hljs-built_in">to</span> <span class="hljs-constant">quote</span>.</code></pre>
+<p>Renders to:</p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
+<p>and this HTML:</p>
+<pre><code class="language-html">&lt;blockquote&gt;
+  &lt;p&gt;Lo<span class="hljs-comment">rem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;</span>
+&lt;/blockquote&gt;</code></pre>
+<p>Blockquotes can also be nested:</p>
+<pre><code class="language-markdown">&gt; Donec massa lacus, ultricies <span class="hljs-tag">a</span> ullamcorper <span class="hljs-keyword">in</span>, fermentum sed augue. 
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. 
+&gt;&gt; Sed adipiscing elit vitae augue consectetur <span class="hljs-tag">a</span> gravida nunc vehicula. Donec auctor 
+odio non est accumsan facilisis. Aliquam id turpis <span class="hljs-keyword">in</span> dolor tincidunt mollis ac eu diam.
+&gt;&gt;&gt; Donec massa lacus, ultricies <span class="hljs-tag">a</span> ullamcorper <span class="hljs-keyword">in</span>, fermentum sed augue. 
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.</code></pre>
+<p>Renders to:</p>
+<blockquote>
+<p>Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. 
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </p>
+<blockquote>
+<p>Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor 
+odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.</p>
+<blockquote>
+<p>Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. 
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p><br>
+<br>
+<br></p>
+<h2 id="lists">Lists</h2>
+<h3 id="unordered">Unordered</h3>
+<p>A list of items in which the order of the items does not explicitly matter.</p>
+<p>You may use any of the following symbols to denote bullets for each list item:</p>
+<pre><code class="language-markdown"><span class="hljs-bullet">* </span>valid bullet
+<span class="hljs-bullet">- </span>valid bullet
+<span class="hljs-bullet">+ </span>valid bullet</code></pre>
+<p>For example</p>
+<pre><code class="language-markdown">+ Lo<span class="hljs-comment">rem ipsum dolor sit amet</span>
++ Consectetur adipiscing elit
++ Integer molestie lo<span class="hljs-comment">rem at massa</span>
++ Facilisis <span class="hljs-flow">in</span> pretium nisl aliquet
++ Nulla volutpat aliquam velit
+  - Phasellus iaculis neque
+  - Purus sodales ultricies
+  - Vestibulum laoreet porttitor sem
+  - Ac tristique libero volutpat <span class="hljs-built_in">at</span>
++ Faucibus porta lacus fringilla vel
++ Aenean sit amet erat nunc
++ Eget porttitor lo<span class="hljs-comment">rem</span></code></pre>
+<p>Renders to:</p>
+<ul>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit<ul>
+<li>Phasellus iaculis neque</li>
+<li>Purus sodales ultricies</li>
+<li>Vestibulum laoreet porttitor sem</li>
+<li>Ac tristique libero volutpat at</li>
+</ul>
+</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ul>
+<p>And this HTML</p>
+<pre><code class="language-html">&lt;ul&gt;
+  &lt;li&gt;Lo<span class="hljs-comment">rem ipsum dolor sit amet&lt;/li&gt;</span>
+  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+  &lt;li&gt;Integer molestie lo<span class="hljs-comment">rem at massa&lt;/li&gt;</span>
+  &lt;li&gt;Facilisis <span class="hljs-flow">in</span> pretium nisl aliquet&lt;/li&gt;
+  &lt;li&gt;Nulla volutpat aliquam velit
+    &lt;ul&gt;
+      &lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
+      &lt;li&gt;Purus sodales ultricies&lt;/li&gt;
+      &lt;li&gt;Vestibulum laoreet porttitor sem&lt;/li&gt;
+      &lt;li&gt;Ac tristique libero volutpat <span class="hljs-built_in">at</span>&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+  &lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+  &lt;li&gt;Eget porttitor lo<span class="hljs-comment">rem&lt;/li&gt;</span>
+&lt;/ul&gt;</code></pre>
+<h3 id="ordered">Ordered</h3>
+<p>A list of items in which the order of items does explicitly matter.</p>
+<pre><code class="language-markdown"><span class="hljs-number">1</span>. Lo<span class="hljs-comment">rem ipsum dolor sit amet</span>
+<span class="hljs-number">2</span>. Consectetur adipiscing elit
+<span class="hljs-number">3</span>. Integer molestie lo<span class="hljs-comment">rem at massa</span>
+<span class="hljs-number">4</span>. Facilisis <span class="hljs-flow">in</span> pretium nisl aliquet
+<span class="hljs-number">5</span>. Nulla volutpat aliquam velit
+<span class="hljs-number">6</span>. Faucibus porta lacus fringilla vel
+<span class="hljs-number">7</span>. Aenean sit amet erat nunc
+<span class="hljs-number">8</span>. Eget porttitor lo<span class="hljs-comment">rem</span></code></pre>
+<p>Renders to:</p>
+<ol>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ol>
+<p>And this HTML:</p>
+<pre><code class="language-html">&lt;ol&gt;
+  &lt;li&gt;Lo<span class="hljs-comment">rem ipsum dolor sit amet&lt;/li&gt;</span>
+  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+  &lt;li&gt;Integer molestie lo<span class="hljs-comment">rem at massa&lt;/li&gt;</span>
+  &lt;li&gt;Facilisis <span class="hljs-flow">in</span> pretium nisl aliquet&lt;/li&gt;
+  &lt;li&gt;Nulla volutpat aliquam velit&lt;/li&gt;
+  &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+  &lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+  &lt;li&gt;Eget porttitor lo<span class="hljs-comment">rem&lt;/li&gt;</span>
+&lt;/ol&gt;</code></pre>
+<p><strong>TIP</strong>: If you just use <code>1.</code> for each number, GitHub will automatically number each item. For example:</p>
+<pre><code class="language-markdown"><span class="hljs-number">1</span>. Lo<span class="hljs-comment">rem ipsum dolor sit amet</span>
+<span class="hljs-number">1</span>. Consectetur adipiscing elit
+<span class="hljs-number">1</span>. Integer molestie lo<span class="hljs-comment">rem at massa</span>
+<span class="hljs-number">1</span>. Facilisis <span class="hljs-flow">in</span> pretium nisl aliquet
+<span class="hljs-number">1</span>. Nulla volutpat aliquam velit
+<span class="hljs-number">1</span>. Faucibus porta lacus fringilla vel
+<span class="hljs-number">1</span>. Aenean sit amet erat nunc
+<span class="hljs-number">1</span>. Eget porttitor lo<span class="hljs-comment">rem</span></code></pre>
+<p>Renders to:</p>
+<ol>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ol>
+<p><br>
+<br>
+<br></p>
+<h2 id="code">Code</h2>
+<h3 id="inline-code">Inline code</h3>
+<p>Wrap inline snippets of code with <code>` </code>.</p>
+<p>For example, <code>&lt;section&gt;&lt;/section&gt;</code> should be wrapped as &quot;inline&quot;.</p>
+<pre><code class="language-html">For example, <span class="hljs-escape">`&lt;</span>section&gt;&lt;/section&gt;<span class="hljs-escape">` </span>should be wrapped as <span class="hljs-string">"inline"</span>.</code></pre>
+<h3 id="indented-code">Indented code</h3>
+<p>Or indent several lines of code by at least four spaces, as in:</p>
+<pre><code class="language-js">   <span class="hljs-comment"> // Some comments</span>
+    <span class="hljs-built_in">line</span> <span class="hljs-number">1</span> <span class="hljs-operator">of</span> code
+    <span class="hljs-built_in">line</span> <span class="hljs-number">2</span> <span class="hljs-operator">of</span> code
+    <span class="hljs-built_in">line</span> <span class="hljs-number">3</span> <span class="hljs-operator">of</span> code</code></pre>
+<pre><code>// Some comments
+<span class="hljs-built_in">line</span> <span class="hljs-number">1</span> <span class="hljs-operator">of</span> code
+<span class="hljs-built_in">line</span> <span class="hljs-number">2</span> <span class="hljs-operator">of</span> code
+<span class="hljs-built_in">line</span> <span class="hljs-number">3</span> <span class="hljs-operator">of</span> code</code></pre>
+<h3 id="block-code-fences-">Block code &quot;fences&quot;</h3>
+<p>Use &quot;fences&quot;  <code>``` </code> to block in multiple lines of code. </p>
+<pre>
+``` html
+Sample text here...
+```
+</pre>
+
+
+<pre><code>Sample <span class="hljs-type">text</span> here...</code></pre>
+<p>HTML:</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">pre</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Sample text here...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">pre</span>&gt;</span></code></pre>
+<h3 id="syntax-highlighting">Syntax highlighting</h3>
+<p>GFM, or &quot;GitHub Flavored Markdown&quot; also supports syntax highlighting. To activate it, simply add the file extension of the language you want to use directly after the first code &quot;fence&quot;, <code>``` js</code>, and syntax highlighting will automatically be applied in the rendered HTML. For example, to apply syntax highlighting to JavaScript code:</p>
+<pre>
+``` javascript
+grunt.initConfig({
+  assemble: {
+    options: {
+      assets: 'docs/assets',
+      data: 'src/data/*.{json,yml}',
+      helpers: 'src/custom-helpers.js',
+      partials: ['src/partials/**/*.{hbs,md}']
+    },
+    pages: {
+      options: {
+        layout: 'default.hbs'
+      },
+      files: {
+        './': ['src/templates/pages/index.hbs']
+      }
+    }
+  }
+};
+```
+</pre>
+
+<p>Renders to:</p>
+<pre><code class="language-javascript">grunt.initConfig({
+  assemble: {
+    options: {
+      assets: <span class="hljs-string">'docs/assets'</span>,
+      data: <span class="hljs-string">'src/data/*.{json,yml}'</span>,
+      helpers: <span class="hljs-string">'src/custom-helpers.js'</span>,
+      partials: [<span class="hljs-string">'src/partials/**/*.{hbs,md}'</span>]
+    },
+    pages: {
+      options: {
+        layout: <span class="hljs-string">'default.hbs'</span>
+      },
+      files: {
+        <span class="hljs-string">'./'</span>: [<span class="hljs-string">'src/templates/pages/index.hbs'</span>]
+      }
+    }
+  }
+};</code></pre>
+<p>And this complicated HTML:</p>
+<pre><code class="language-xml">&lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"highlight"</span>&gt;&lt;pre&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"nx"</span>&gt;grunt&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;.&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"nx"</span>&gt;initConfig&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;({&lt;/span&gt;
+  &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"nx"</span>&gt;assemble&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"o"</span>&gt;:&lt;/span&gt; &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;{&lt;/span&gt;
+    &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"nx"</span>&gt;options&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"o"</span>&gt;:&lt;/span&gt; &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;{&lt;/span&gt;
+      &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"nx"</span>&gt;assets&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"o"</span>&gt;:&lt;/span&gt; &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"s1"</span>&gt;<span class="hljs-string">'docs/assets'</span>&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;,&lt;/span&gt;
+      &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"nx"</span>&gt;data&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"o"</span>&gt;:&lt;/span&gt; &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"s1"</span>&gt;<span class="hljs-string">'src/data/*.{json,yml}'</span>&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;,&lt;/span&gt;
+      &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"nx"</span>&gt;helpers&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"o"</span>&gt;:&lt;/span&gt; &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"s1"</span>&gt;<span class="hljs-string">'src/custom-helpers.js'</span>&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;,&lt;/span&gt;
+      &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"nx"</span>&gt;partials&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"o"</span>&gt;:&lt;/span&gt; &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;[&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"s1"</span>&gt;<span class="hljs-string">'src/partials/**/*.{hbs,md}'</span>&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;]&lt;/span&gt;
+    &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;},&lt;/span&gt;
+    &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"nx"</span>&gt;pages&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"o"</span>&gt;:&lt;/span&gt; &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;{&lt;/span&gt;
+      &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"nx"</span>&gt;options&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"o"</span>&gt;:&lt;/span&gt; &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;{&lt;/span&gt;
+        &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"nx"</span>&gt;layout&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"o"</span>&gt;:&lt;/span&gt; &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"s1"</span>&gt;<span class="hljs-string">'default.hbs'</span>&lt;/span&gt;
+      &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;},&lt;/span&gt;
+      &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"nx"</span>&gt;files&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"o"</span>&gt;:&lt;/span&gt; &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;{&lt;/span&gt;
+        &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"s1"</span>&gt;<span class="hljs-string">'./'</span>&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"o"</span>&gt;:&lt;/span&gt; &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;[&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"s1"</span>&gt;<span class="hljs-string">'src/templates/pages/index.hbs'</span>&lt;/span&gt;&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;]&lt;/span&gt;
+      &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;}&lt;/span&gt;
+    &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;}&lt;/span&gt;
+  &lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;}&lt;/span&gt;
+&lt;span <span class="hljs-keyword">class</span>=<span class="hljs-string">"p"</span>&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</code></pre>
+<p><br>
+<br>
+<br></p>
+<h2 id="tables">Tables</h2>
+<p>Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vertically aligned.</p>
+<pre><code class="language-markdown">|<span class="hljs-string"> Option </span>|<span class="hljs-string"> Description </span>|
+|<span class="hljs-string"> ------ </span>|<span class="hljs-string"> ----------- </span>|
+|<span class="hljs-string"> data   </span>|<span class="hljs-string"> path to data files to supply the data that will be passed into templates. </span>|
+|<span class="hljs-string"> engine </span>|<span class="hljs-string"> engine to be used for processing templates. Handlebars is the default. </span>|
+|<span class="hljs-string"> ext    </span>|<span class="hljs-string"> extension to be used for dest files. </span>|</code></pre>
+<p>Renders to:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td>engine</td>
+<td>engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td>ext</td>
+<td>extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+<p>And this HTML:</p>
+<pre><code class="language-html"><span class="hljs-variable">&lt;table&gt;</span>
+  <span class="hljs-variable">&lt;tr&gt;</span>
+    <span class="hljs-variable">&lt;th&gt;</span>Option<span class="hljs-variable">&lt;/th&gt;</span>
+    <span class="hljs-variable">&lt;th&gt;</span>Description<span class="hljs-variable">&lt;/th&gt;</span>
+  <span class="hljs-variable">&lt;/tr&gt;</span>
+  <span class="hljs-variable">&lt;tr&gt;</span>
+    <span class="hljs-variable">&lt;td&gt;</span>data<span class="hljs-variable">&lt;/td&gt;</span>
+    <span class="hljs-variable">&lt;td&gt;</span>path <span class="hljs-keyword">to</span> data files <span class="hljs-keyword">to</span> supply the data that will be passed into templates.<span class="hljs-variable">&lt;/td&gt;</span>
+  <span class="hljs-variable">&lt;/tr&gt;</span>
+  <span class="hljs-variable">&lt;tr&gt;</span>
+    <span class="hljs-variable">&lt;td&gt;</span>engine<span class="hljs-variable">&lt;/td&gt;</span>
+    <span class="hljs-variable">&lt;td&gt;</span>engine <span class="hljs-keyword">to</span> be used <span class="hljs-keyword">for</span> processing templates. Handlebars is the <span class="hljs-keyword">default</span>.<span class="hljs-variable">&lt;/td&gt;</span>
+  <span class="hljs-variable">&lt;/tr&gt;</span>
+  <span class="hljs-variable">&lt;tr&gt;</span>
+    <span class="hljs-variable">&lt;td&gt;</span>ext<span class="hljs-variable">&lt;/td&gt;</span>
+    <span class="hljs-variable">&lt;td&gt;</span>extension <span class="hljs-keyword">to</span> be used <span class="hljs-keyword">for</span> dest files.<span class="hljs-variable">&lt;/td&gt;</span>
+  <span class="hljs-variable">&lt;/tr&gt;</span>
+<span class="hljs-variable">&lt;/table&gt;</span></code></pre>
+<h3 id="right-aligned-text">Right aligned text</h3>
+<p>Adding a colon on the right side of the dashes below any heading will right align text for that column.</p>
+<pre><code class="language-markdown">|<span class="hljs-string"> Option </span>|<span class="hljs-string"> Description </span>|
+|<span class="hljs-string"> ------:</span>|<span class="hljs-string"> -----------:</span>|
+|<span class="hljs-string"> data   </span>|<span class="hljs-string"> path to data files to supply the data that will be passed into templates. </span>|
+|<span class="hljs-string"> engine </span>|<span class="hljs-string"> engine to be used for processing templates. Handlebars is the default. </span>|
+|<span class="hljs-string"> ext    </span>|<span class="hljs-string"> extension to be used for dest files. </span>|</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">Option</th>
+<th style="text-align:right">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">data</td>
+<td style="text-align:right">path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td style="text-align:right">engine</td>
+<td style="text-align:right">engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td style="text-align:right">ext</td>
+<td style="text-align:right">extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+<br>
+<br></p>
+<h2 id="links">Links</h2>
+<h3 id="basic-link">Basic link</h3>
+<pre><code class="language-markdown">[<span class="hljs-link_label">Assemble</span>](<span class="hljs-link_url">http://assemble.io</span>)</code></pre>
+<p>Renders to (hover over the link, there is no tooltip):</p>
+<p><a href="http://assemble.io">Assemble</a></p>
+<p>HTML:</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"http://assemble.io"</span>&gt;</span>Assemble<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre>
+<h3 id="add-a-title">Add a title</h3>
+<pre><code class="language-markdown">[<span class="hljs-link_label">Upstage</span>](<span class="hljs-link_url">https://github.com/upstage/ "Visit Upstage!"</span>)</code></pre>
+<p>Renders to (hover over the link, there should be a tooltip):</p>
+<p><a href="https://github.com/upstage/" title="Visit Upstage!">Upstage</a></p>
+<p>HTML:</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"https://github.com/upstage/"</span> <span class="hljs-attribute">title</span>=<span class="hljs-value">"Visit Upstage!"</span>&gt;</span>Upstage<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre>
+<h3 id="named-anchors">Named Anchors</h3>
+<p>Named anchors enable you to jump to the specified anchor point on the same page. For example, each of these chapters:</p>
+<pre><code class="language-markdown"><span class="hljs-header"># Table of Contents</span>
+  * [<span class="hljs-link_label">Chapter 1</span>](<span class="hljs-link_url">#chapter-1</span>)
+  * [<span class="hljs-link_label">Chapter 2</span>](<span class="hljs-link_url">#chapter-2</span>)
+  * [<span class="hljs-link_label">Chapter 3</span>](<span class="hljs-link_url">#chapter-3</span>)</code></pre>
+<p>will jump to these sections:</p>
+<pre><code class="language-markdown"><span class="hljs-comment">## Chapter 1 &lt;a id="chapter-1"&gt;&lt;/a&gt;</span>
+Content <span class="hljs-keyword">for</span> chapter <span class="hljs-constant">one</span>.
+
+<span class="hljs-comment">## Chapter 2 &lt;a id="chapter-2"&gt;&lt;/a&gt;</span>
+Content <span class="hljs-keyword">for</span> chapter <span class="hljs-constant">one</span>.
+
+<span class="hljs-comment">## Chapter 3 &lt;a id="chapter-3"&gt;&lt;/a&gt;</span>
+Content <span class="hljs-keyword">for</span> chapter <span class="hljs-constant">one</span>.</code></pre>
+<p><strong>NOTE</strong> that specific placement of the anchor tag seems to be arbitrary. They are placed inline here since it seems to be unobtrusive, and it works.</p>
+<p><br>
+<br>
+<br></p>
+<h2 id="images">Images</h2>
+<p>Images have a similar syntax to links but include a preceding exclamation point.</p>
+<pre><code class="language-markdown">![<span class="hljs-link_label">Minion</span>](<span class="hljs-link_url">http://octodex.github.com/images/minion.png</span>)</code></pre>
+<p><img src="http://octodex.github.com/images/minion.png" alt="Minion"></p>
+<p>or</p>
+<pre><code class="language-markdown">![<span class="hljs-link_label">Alt text</span>](<span class="hljs-link_url">http://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat"</span>)</code></pre>
+<p><img src="http://octodex.github.com/images/stormtroopocat.jpg" alt="Alt text" title="The Stormtroopocat"></p>
+<p>Like links, Images also have a footnote style syntax</p>
+<pre><code class="language-markdown">![<span class="hljs-link_label">Alt text</span>][<span class="hljs-link_reference">id</span>]</code></pre>
+<p><img src="http://octodex.github.com/images/dojocat.jpg" alt="Alt text" title="The Dojocat"></p>
+<p>With a reference later in the document defining the URL location:</p>
